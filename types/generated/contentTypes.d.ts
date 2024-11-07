@@ -415,6 +415,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       'api::blog-category.blog-category'
     >;
     content: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
