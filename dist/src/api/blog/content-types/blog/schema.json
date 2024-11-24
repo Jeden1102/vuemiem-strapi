@@ -48,6 +48,16 @@
         "reading_time": {
             "type": "integer",
             "required": false
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
         }
     }
 }
